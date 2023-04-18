@@ -1,0 +1,12 @@
+:root {
+  --color-bg: #161617;
+  --color-line: #1d1d1f;
+  --color-title: #fff;
+  --color-text: #86868b;
+
+  --size-12: 12px;
+  --size-16: 16px;
+  --size-20: 20px;
+  --size-24: 24px;
+  --size-32: 32px;
+}
