@@ -6,7 +6,6 @@ export const HeaderStyled = styled.header`
   position: sticky;
   top: 0;
   height: 48px;
-  padding: 0 12px;
   border-bottom: 1px solid var(--color-line);
   background-color: rgba(22, 22, 23, 0.8);
   backdrop-filter: saturate(180%) blur(20px);
@@ -15,4 +14,18 @@ export const HeaderStyled = styled.header`
   font-weight: bold;
   color: var(--color-title);
   text-transform: uppercase;
+  h1 {
+    a {
+      display: flex;
+      align-items: center;
+      gap: 0 12px;
+      padding: 0 12px;
+      line-height: 48px;
+      color: var(--color-title);
+      .icon {
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
 `;
