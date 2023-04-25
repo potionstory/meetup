@@ -3,10 +3,20 @@
   --color-line: #1d1d1f;
   --color-title: #fff;
   --color-text: #86868b;
+  --color-orange: #ffa54d;
+  --color-pink: #f07bc5;
+  --color-blue: #43aeff;
 
   --size-12: 12px;
   --size-16: 16px;
   --size-20: 20px;
   --size-24: 24px;
   --size-32: 32px;
+  --size-48: 48px;
+  --size-64: 64px;
+  --size-128: 128px;
+
+  --weight-400: 400;
+  --weight-500: 500;
+  --weight-700: 700;
 }
