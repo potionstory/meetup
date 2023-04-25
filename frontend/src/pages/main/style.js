@@ -25,15 +25,11 @@ export const MainStyled = styled.div`
   }
   .description {
     font-size: var(--size-16);
+    font-weight: var(--weight-700);
     color: var(--color-text);
     line-height: var(--size-32);
     text-align: center;
-    em {
-      /* font-weight: var(--weight-700);
-      color: var(--color-title); */
-    }
     b {
-      font-weight: var(--weight-700);
       color: var(--color-title);
     }
   }
