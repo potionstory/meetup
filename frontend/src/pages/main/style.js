@@ -33,4 +33,44 @@ export const MainStyled = styled.div`
       color: var(--color-title);
     }
   }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    .menu-box {
+      position: relative;
+      padding-top: calc(50% - 6px);
+      width: calc(50% - 6px);
+      .menu-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        button {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 12px 0;
+          width: 100%;
+          height: 100%;
+          background-color: var(--color-line);
+          .icon {
+            svg {
+              font-size: var(--size-24);
+              color: var(--color-green);
+            }
+          }
+          .name {
+            font-size: var(--size-16);
+            font-weight: var(--weight-700);
+            color: var(--color-title);
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
 `;

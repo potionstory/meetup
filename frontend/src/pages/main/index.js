@@ -1,5 +1,5 @@
 import { MainStyled } from "./style";
-import { faMessage } from "@fortawesome/free-solid-svg-icons";
+import { faChildren, faCode, faDoorOpen, faGift, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Main() {
@@ -18,6 +18,48 @@ export default function Main() {
         <br />
         다양한 음식과 이벤트로 다시 찾아온 풍성한 <b>시간</b>
       </p>
+      <div className="menu">
+        <div className="menu-box">
+          <div className="menu-inner">
+            <button type="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faCode} />
+              </span>
+              <span class="name">intro</span>
+            </button>
+          </div>
+        </div>
+        <div className="menu-box">
+          <div className="menu-inner">
+            <button type="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faChildren} />
+              </span>
+              <span class="name">member</span>
+            </button>
+          </div>
+        </div>
+        <div className="menu-box">
+          <div className="menu-inner">
+            <button type="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faGift} />
+              </span>
+              <span class="name">event</span>
+            </button>
+          </div>
+        </div>
+        <div className="menu-box">
+          <div className="menu-inner">
+            <button type="button">
+              <span className="icon">
+                <FontAwesomeIcon icon={faDoorOpen} />
+              </span>
+              <span class="name">join</span>
+            </button>
+          </div>
+        </div>
+      </div>
     </MainStyled>
   );
 }
