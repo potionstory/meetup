@@ -1,6 +1,34 @@
 import { MainStyled } from "./style";
-import { faChildren, faCode, faDoorOpen, faGift, faMessage } from "@fortawesome/free-solid-svg-icons";
+import MenuBox from "@/components/MenuBox";
+import { faChildren, faDoorOpen, faGift, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+const menuArray = [
+  {
+    title: "intro",
+    icon: faMessage,
+    color: "#ffa54d",
+    url: "/intro",
+  },
+  {
+    title: "member",
+    icon: faChildren,
+    color: "#00d959",
+    url: "/member",
+  },
+  {
+    title: "event",
+    icon: faGift,
+    color: "#f07bc5",
+    url: "/event",
+  },
+  {
+    title: "join",
+    icon: faDoorOpen,
+    color: "#43aeff",
+    url: "/join",
+  },
+];
 
 export default function Main() {
   return (
@@ -19,46 +47,9 @@ export default function Main() {
         다양한 음식과 이벤트로 다시 찾아온 풍성한 <b>시간</b>
       </p>
       <div className="menu">
-        <div className="menu-box">
-          <div className="menu-inner">
-            <button type="button">
-              <span className="icon">
-                <FontAwesomeIcon icon={faCode} />
-              </span>
-              <span class="name">intro</span>
-            </button>
-          </div>
-        </div>
-        <div className="menu-box">
-          <div className="menu-inner">
-            <button type="button">
-              <span className="icon">
-                <FontAwesomeIcon icon={faChildren} />
-              </span>
-              <span class="name">member</span>
-            </button>
-          </div>
-        </div>
-        <div className="menu-box">
-          <div className="menu-inner">
-            <button type="button">
-              <span className="icon">
-                <FontAwesomeIcon icon={faGift} />
-              </span>
-              <span class="name">event</span>
-            </button>
-          </div>
-        </div>
-        <div className="menu-box">
-          <div className="menu-inner">
-            <button type="button">
-              <span className="icon">
-                <FontAwesomeIcon icon={faDoorOpen} />
-              </span>
-              <span class="name">join</span>
-            </button>
-          </div>
-        </div>
+        {menuArray.map((menu) => (
+          <MenuBox key={menu.title} menu={menu} />
+        ))}
       </div>
     </MainStyled>
   );
