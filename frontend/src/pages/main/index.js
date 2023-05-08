@@ -1,5 +1,6 @@
 import { MainStyled } from "./style";
 import MenuBox from "@/components/MenuBox";
+import { color } from "@/lib/const";
 import { faChildren, faDoorOpen, faGift, faMessage } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -7,25 +8,25 @@ const menuArray = [
   {
     title: "intro",
     icon: faMessage,
-    color: "#ffa54d",
+    color: color.orange,
     url: "/intro",
   },
   {
     title: "member",
     icon: faChildren,
-    color: "#00d959",
+    color: color.green,
     url: "/member",
   },
   {
     title: "event",
     icon: faGift,
-    color: "#f07bc5",
+    color: color.pink,
     url: "/event",
   },
   {
     title: "join",
     icon: faDoorOpen,
-    color: "#43aeff",
+    color: color.blue,
     url: "/join",
   },
 ];
