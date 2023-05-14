@@ -15,9 +15,7 @@ export default function MenuBox({ menu }) {
         </span>
         <Link href={url} className="menu-link">
           details more
-          <span className="link-icon">
-            <FontAwesomeIcon icon={faAngleRight} />
-          </span>
+          <FontAwesomeIcon icon={faAngleRight} />
         </Link>
       </div>
     </MenuBoxStyled>
