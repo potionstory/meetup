@@ -19,7 +19,7 @@ export const JoinStyled = styled.div`
       width: 40px;
       height: 40px;
       border-radius: 6px;
-      background-color: var(--color-orange);
+      background-color: var(--color-blue);
       svg {
         font-size: var(--size-24);
         color: var(--color-bg);
@@ -63,16 +63,17 @@ export const JoinStyled = styled.div`
       width: 100%;
       height: 40px;
       border-radius: 6px;
-      background-color: var(--color-line);
       font-size: var(--size-12);
       font-weight: var(--weight-700);
+      color: var(--color-text);
       ${(props) =>
         props.isJoinActive
           ? css`
-              color: var(--color-blue);
+              background-color: var(--color-blue);
+              color: var(--color-bg);
             `
           : css`
-              color: var(--color-text);
+              background-color: var(--color-line);
             `};
       text-align: center;
       text-transform: uppercase;
